@@ -1,0 +1,787 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>Rezeptrechner PRO Business</title>
+
+       <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <div class="col s12 qr-code-tab-header">
+         <ul class="tabs ui-tabs ui-corner-all ui-widget ui-widget-content">
+           <li class="tab col s3">
+             <a href="" style="color: black;">Produkt Pass</a>
+           </li>
+           <li class="tab col s3 arbeitsanweisung">
+             <a href="">Arbeitsanweisung</a>
+           </li>
+           <li class="indicator" style="left: 0px; right: 979px;"></li>
+         </ul>
+         <div class="beta_v_notify">
+           Dies ist eine Beta Version. Die Speichermöglichkeit folgt in Kürze.
+         </div>
+       </div>
+          <div id="produkt_pass_tab" class="col s12 produkt-pass-section active">
+            <div class="row inner_content">
+            <div class="col s9 bg_grey update--current-receipe">
+              <div class="row-type">
+                <div class="img_btn">
+                  <button class="qrcode--action qr_pdf" data-type="pdf" data-section="Produkt" data-attr-name="Low Carb Brot" data-attr-id="ihFKKqC251"><img src="img/1.png"></button>
+
+                  <button class="disabled-btn" href="#modal1" data-type="QRCode" data-attr-name="Low Carb Brot" data-attr-id="T3echd6r8Z"><img src="img/qrcode.png"> <!--<p>Demnächst verfügbar</p>--></button>
+                </div>
+              </div>
+               
+               <div class="middle_section_parent">
+                 <div class="middle_section">
+                    <div class="col-ting banner">
+                      <div class="imgUp empty_img">
+                        
+
+                          <label class="btn btn-primary">
+                            <p>Upload Banner</p>
+                            <input type="file" id="logofileupload" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                          </label>
+                          <div class="remove_images" data-url="">
+                            <img src="img/delete.svg">
+                          </div>
+                      </div>
+                      <input type="hidden" class="qr_logo_delete" name="logo_delete" value>
+                    </div>
+
+                    <!-- recipes_titles centered Start -->
+                     <div class="recipes_titles centered">
+                       <div class="editor7 ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-blurred recipe_name" lang="de" dir="ltr" role="textbox" aria-label="Rich Text Editor. Bearbeitungsbereich: main" contenteditable="true">
+                         <p class="recipe_name">115g Apfel 1 Joghurt</p>
+                       </div>
+                       <div class="recipes_imageUpload">
+                          <div class="imgUp empty_img">
+                            <div class="imagePreview">
+                                <label class="btn btn-primary">
+                                   <img src="img/2.png" style="padding-left: 94px;">
+                                  <p>Upload Banner</p>
+                                     <input type="file" id="logofileupload" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                                </label>
+                            </div>
+                          </div>
+                       </div>
+                     </div>
+
+                    <!-- recipes_titles centered end -->
+                 
+
+               <!---new_section add----->
+               <div id="lable_preivew_T3echd6r8Z" class="label_printer">
+                 <div id="lable_details_T3echd6r8Z" class="row label_details">
+                   <div class="left_part nutritional_table"> 
+                     <div class="table_data label_body">
+                       <table class="table-vertical" cellpadding="0" cellspacing="0">
+                         <tbody class="label_body">
+                           <tr>
+                             <td colspan="2">
+                               <p class="headings">
+                                 <strong>Durchschnittliche Nährwerte pro 100g</strong>
+                               </p>
+                             </td>
+                           </tr>
+                           <tr class="label_data">
+                             <td class="font-bold">
+                               <strong>Brennwert</strong>
+                             </td>
+                             <td id="brennwert_row_ihFKKqC251" class="row_nutrition">
+                               <span class="roh">
+                                 1071,4 kJ/
+                                 <br>
+                                 253,7 kcal
+                               </span>
+                             </td>
+                           </tr>
+                           <tr class="label_data">
+                              <td class="font-bold">
+                                <strong>Fett</strong>
+                              </td>
+                              <td id="brennwert_row_ihFKKqC251" class="row_nutrition">
+                               <span class="roh">4,2</span>
+                               <span class="gramm">g</span>
+                             </td>
+                           </tr>
+                           <tr class="label_data">
+                              <td class="font-bold special_label">davon gesättigte Fettsäuren</td>
+                              <td id="davon_row_ihFKKqC251" class="row_nutrition">
+                               <span class="roh">2,1</span>
+                               <span class="gramm">g</span>
+                             </td>
+                           </tr>
+                           <tr class="label_data">
+                             <td class="font-bold">
+                               <strong>Kohlenhydrate</strong>
+                             </td>
+                             <td id="kohle_row_ihFKKqC251" class="row_nutrition">
+                               <span class="roh">47,9</span>
+                               <span class="gramm">g</span>
+                             </td>
+                           </tr>
+                           <tr class="label_data">
+                              <td class="font-bold special_label">davon Zucker</td>
+                              <td id="davon_row_ihFKKqC251" class="row_nutrition">
+                               <span class="roh">22,0</span>
+                               <span class="gramm">g</span>
+                             </td>
+                           </tr>
+                           <tr class="label_data">
+                             <td class="font-bold">
+                               <strong>Eiweiß</strong>
+                             </td>
+                             <td id="kohle_row_ihFKKqC251" class="row_nutrition">
+                               <span class="roh">4,3</span>
+                               <span class="gramm">g</span>
+                             </td>
+                           </tr>
+                           <tr class="label_data last_border"> 
+                             <td class="font-bold last_border">
+                               <strong>Salz</strong>
+                             </td>
+                             <td id="salz_row_ihFKKqC251" class="row_nutrition last_border">
+                               <span class="roh">0,8</span>
+                               <span class="gramm">g</span>
+                             </td>
+                           </tr>
+                         </tbody>
+                       </table>
+                     </div>
+                   </div>
+
+                   <div class="right_part ingredient_list"> 
+                     <div class="ing_details">
+                       <table cellspacing="0" cellpadding="0">
+                         <tbody>
+                           <tr class="Enthält-Allergene">
+                             <td>
+                               <p class="headings">
+                               <strong>Enthält-Allergene:</strong>
+                             </p>
+                             </td>
+                           </tr>
+                           <tr class="Enthält-Allergene">
+                             <td>
+                               <p class="editor7 ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-blurred" lang="de" dir="ltr" role="textbox" aria-label="Rich Text Editor. Bearbeitungsbereich: main" contenteditable="true">Apfel, Zwieback(Gluten, Weizen, mit Antioxidationsmittel, Emulgator), Zucker, Zwiebel (getrocknet)</p>
+                             </td>
+                           </tr>
+                           <tr class="Zutaten">
+                             <td>
+                               <p class="markenname_ihFKKqC251" class="headings">
+                               <strong>Zutaten:</strong>
+                             </p>
+                             <p class="editor7 ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-blurred" lang="de" dir="ltr" role="textbox" aria-label="Rich Text Editor. Bearbeitungsbereich: main" contenteditable="true">Gluten, Weizen</p>
+                             </td>
+                           </tr>
+                         </tbody>
+                       </table>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            
+          
+      
+         <!-- deklarationshinweis_step start -->
+           <div class="deklarationshinweis_step Deklarationshinweis">
+             <p class="headings" id="allergene_headingihFKKqC251">
+               <strong>Deklarationshinweis:</strong>
+             </p>
+              <p class="editor7 ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-blurred" lang="de" dir="ltr" role="textbox" aria-label="Rich Text Editor. Bearbeitungsbereich: main" contenteditable="true">Zu beachten! Die Rohstoffe Ei Glutenhaltiges Getreide , Nüsse, Samen und Kerne jeglicher Art, Soja, Milchprodukte, Sellerie, Fisch und Meeresfrüchte, Weichtiere, Sulfit und Senf werden in der Produktionsküche verarbeitet. Wodurch eine Kreuzkontamination von Allergenen nicht auszuschließen ist.
+             </p>
+           </div>
+         <!-- deklarationshinweis_step end -->
+
+         <!-- zubereitung_sec head_ing hinweise_steps -->
+          <div class="zubereitung_sec head_ing hinweise_steps Hinweise">
+             <h2>
+               <strong>Hinweise zum Produkt:</strong>
+             </h2>
+             <p class="editor13 ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-blurred" lang="de" dir="ltr" role="textbox" aria-label="Rich Text Editor. Bearbeitungsbereich: main" contenteditable="true">Alle Produkte sind sortenrein. Das verarbeitete Getreide stammt aus regionalem Anbau..</p>
+           </div>
+         <!-- zubereitung_sec head_ing hinweise_steps -->
+         <!-- serving_beilage head_ing start -->
+           <div class="serving_beilage head_ing">
+             <div class="serving_suggestion serving_suggestion1" style="">
+               <h2 class="editor11 ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-blurred" lang="de" dir="ltr" role="textbox" aria-label="Rich Text Editor. Bearbeitungsbereich: main" contenteditable="true">
+                 <p>
+                   <strong>Serviervorschlag:</strong>
+                 </p>
+               </h2>
+               <p class="editor7 ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-blurred" lang="de" dir="ltr" role="textbox" aria-label="Rich Text Editor. Bearbeitungsbereich: main" contenteditable="true">
+               </p>
+             </div>
+             <div class="serving_suggestion head_ing side_dish">
+                <h2 class="editor11 ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-blurred" lang="de" dir="ltr" role="textbox" aria-label="Rich Text Editor. Bearbeitungsbereich: main" contenteditable="true">
+                 <p>
+                   <strong>Beilagenempfehlung:</strong>
+                 </p>
+               </h2>
+               <p class="editor7 ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline ck-blurred" lang="de" dir="ltr" role="textbox" aria-label="Rich Text Editor. Bearbeitungsbereich: main" contenteditable="true">Beilagen:
+               </p>
+             </div>
+             </div>
+         <!-- serving_beilage head_ing end -->
+
+             <!-- gstin ean tables start-->
+                <div class="gstin-tables artikel-details">
+                  <table class="gstin-table" cellspacing="0">
+                    <thead align="left">
+                      <tr>
+                        <th class="Artikelnummer" style="display:table-cell;">Artikelnummer</th>
+                        <th class="gitn-stuck" style="display:table-cell;">GTIN-Stück (ehem. EAN) </th>
+                        <th class="gitn-verpackung" style="display:table-cell;">GTIN-Verpackung </th>
+                        <th class="gitn-gewicht" style="display:table-cell;">Gewicht </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="Artikelnummer" id="Artikelnummer" style="display:table-cell;">
+                          <textarea placeholder="Hier klicken"></textarea>
+                        </td>
+                        <td class="gitn-stuck" id="gitn-stuck" style="display:table-cell;">
+                          <textarea placeholder="Hier klicken"></textarea>
+                        </td>
+                        <td class="gitn-verpackung" id="gitn-verpackung" style="display:table-cell;">
+                          <textarea placeholder="Hier klicken"></textarea>
+                        </td>
+                        <td class="gitn-gewicht" id="gitn-gewicht" style="border-right: none !important; display:table-cell;">
+                          <textarea placeholder="Hier klicken"></textarea>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <table class="quantity-table" cellspacing="0">
+                    <thead align="left">
+                      <tr>
+                        <th class="marke" style="display:table-cell;">Marke </th>
+                        <th class="qualitat" style="display:table-cell;">Qualität </th>
+                        <th class="okokontrollstelle" style="display:table-cell;">Öko-Kontrollstelle </th>
+                        <th class="herkunft" style="display:table-cell;">Herkunft </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="marke" id="marke" style="display:table-cell;">
+                          <textarea placeholder="Hier klicken"></textarea>
+                        </td>
+                        <td class="qualitat" id="qualitat" style="display:table-cell;">
+                          <textarea placeholder="Hier klicken"></textarea>
+                        </td>
+                        <td class="okokontrollstelle" id="okokontrollstelle" style="display:table-cell;">
+                          <textarea placeholder="Hier klicken"></textarea>
+                        </td>
+                        <td class="herkunft" id="herkunft" style="border-right: none !important;display:table-cell;">
+                          <textarea placeholder="Hier klicken"></textarea>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+             <!-- gstin ean tables end-->
+             <!-- middle footer start -->
+           <div class="middle_footer">
+             <p class="footer_address">
+              <b class="contact_name"><strong>Kontakt: </strong></b>
+               <span class="companyName Firma" style="display:contents;">Rezeptrechner Firma, </span>
+               <span class="streetNumber Mühlenkamp" style="display:contents;">Mühlenkamp 311, </span>
+               <span class="postalCode pincode" style="display:contents;">22335, </span>
+               <span class="city Stadt" style="display:contents;">Hamburg, </span>
+               <span class="country Land" style="display:contents;">Deutschland, </span>
+               <span class="phone phone" style="display:contents;">Telefon: + 33 333 333 333 1, </span>
+               <span class="publicEmail email" style="display:contents;">E-Mail: tina@rezeptrechner.de</span>
+             </p>
+           </div>
+             <!-- middle footer end -->
+
+        </div>
+      </div>
+    </div>
+         
+
+         <!-- -------tabs--------- -->
+
+         <div class="col s3 modal2_tabs hide_on_mobile1">
+           <div class="row first_row">
+             <div class="col s12 side_list">
+               <ul>
+                 <li class="col s12" style="width: 100%;background: #fff;border-bottom: 4px solid #70af1a;">
+                   <a href="#">Layout</a>
+                 </li>
+               </ul>
+
+               <div id="layout_modal" class="col s12 layout_tab active">
+                 <div class="qr-code-layout-changer">
+                   <p class="head"> 
+                     Layout Einstellungen
+                   </p>
+                   <label class="chklbl">
+                     <input name="group1" type="radio" class="radio-btn-check"/>
+                       <span class="lever"><p style="margin-left: 35px;">Bäcker, sortenreine Produkte</p></span>
+                   </label>
+                   <br>
+                  <label class="chklbl">
+                     <input name="group1" type="radio" checked class="radio-btn-check2"/>
+                       <span class="lever"><p style="margin-left: 35px;">Deli/ Feinkost</p></span>
+                   </label>
+                 </div>
+              <!-- hide and show img  -->
+                 <div class="layout_onoff">
+                   <div class="logo-switch">
+                     <span class="show_content" eye-btn="banner">
+                       <img src="img/show.svg" id="banner_show">
+                     </span>
+                     <span class="hide_content" eye-btn="banner" >
+                       <img src="img/hide.svg" class="hide" id="banner_hide">
+                     </span>
+                     <!-- Logo -->
+                     <div class="switch logo_banner">
+                       <label>
+                         <span id="logo_section">
+                           Logo 
+                           <!-- Switch -->
+                            <input type="checkbox">
+                              <span class="lever"></span>
+                           </span>
+                          
+                       </label>
+                       <p class="banner-text"><b>Banner</b></p>
+                     </div>
+                   </div>
+
+                 <div class="logo-switch second">
+                     <span class="show_content" eye-btn="recipe_name">
+                       <img src="img/show.svg" id="recipes_show">
+                     </span>
+                     <span class="hide_content" eye-btn="recipe_name" >
+                       <img src="img/hide.svg" class="hide" id="recipes_hide">
+                     </span>
+                     <!-- Logo -->
+                     <div class="switch logo_banner">
+                       <label>
+                         <span id="logo_section">
+                           Rezeptname
+                         </span>
+                       </label>
+                     </div>
+                   </div>
+
+
+                   <div class="logo-switch second">
+                     <span class="show_content" eye-btn="label_printer_name">
+                       <img src="img/show.svg" id="label_printer_show">
+                     </span>
+                     <span class="hide_content" eye-btn="label_printer_name" >
+                       <img src="img/hide.svg" class="hide" id="label_printer_hide">
+                     </span>
+                     <!-- Logo -->
+                     <div class="switch logo_banner">
+                       <label>
+                         <span id="logo_section">
+                            Nährwerttabelle
+                         </span>
+                       </label>
+                     </div>
+                   </div>
+
+
+                    <div class="logo-switch second">
+                     <span class="show_content" eye-btn="Enthält-Allergene_name">
+                       <img src="img/show.svg" id="Enthält-Allergene_show">
+                     </span>
+                     <span class="hide_content" eye-btn="Enthält-Allergene_name" >
+                       <img src="img/hide.svg" class="hide" id="Enthält-Allergene_hide">
+                     </span class>
+                     <!-- Logo  -->
+                     <div class="switch logo_banner">
+                       <label>
+                         <span id="logo_section">
+                            Zutatenliste
+                         </span>
+                       </label>
+                     </div>
+                   </div>
+
+
+
+
+                    <div class="logo-switch second">
+                     <span class="show_content" eye-btn="Zutaten_name">
+                       <img src="img/show.svg" id="Zutaten_show">
+                     </span>
+                     <span class="hide_content" eye-btn="Zutaten_name" >
+                       <img src="img/hide.svg" class="hide" id="Zutaten_hide">
+                     </span>
+                     <!-- Logo  -->
+                     <div class="switch logo_banner">
+                       <label>
+                         <span id="logo_section">
+                             Enthält-Allergene
+                         </span>
+                       </label>
+                     </div>
+                   </div>
+
+
+                  <div class="logo-switch">
+                     <!-- <span class="show_content" eye-btn="banner">
+                       <img src="img/show.svg" id="banner_show">
+                     </span> -->
+                     <!-- <span class="hide_content" eye-btn="banner" >
+                       <img src="img/hide.svg" class="hide" id="banner_hide">
+                     </span> -->
+                     <!-- Logo -->
+                     <div class="switch logo_banner">
+                       <label>
+                         <span id="logo_section">
+                          Automatisiert
+                           <!-- Switch -->
+                            <input type="checkbox">
+                              <span class="lever"></span>
+                           </span>
+                          
+                       </label>
+                       <p class="banner-text">Individuell</p>
+                     </div>
+                   </div>
+
+                    <div class="logo-switch second">
+                     <span class="show_content" eye-btn="Hinweise_name">
+                        <img src="img/show.svg" id="Hinweise_show">
+                     </span>
+                     <span class="hide_content" eye-btn="Hinweise_name">
+                       <img src="img/hide.svg" class="hide" id="Hinweise_hide">
+                     </span>
+                     <!-- Logo  -->
+                     <div class="switch logo_banner">
+                       <label>
+                         <span id="logo_section">
+                            Hinweise zum Produkt
+                         </span>
+                       </label>
+                     </div>
+                   </div>
+
+
+
+                   <div class="logo-switch second">
+                     <span class="show_content" eye-btn="Deklarationshinweis_name">
+                       <img src="img/show.svg" id="Deklarationshinweis_show">
+                     </span>
+                     <span class="hide_content" eye-btn="Deklarationshinweis_name" >
+                       <img src="img/hide.svg" class="hide" id="Deklarationshinweis_hide">
+                     </span>
+                     <!-- Logo  -->
+                     <div class="switch logo_banner">
+                       <label>
+                         <span id="logo_section">
+                             Deklarationshinweis
+                         </span>
+                       </label>
+                     </div>
+                   </div>
+
+                 </div>
+
+                 <ul class="collapsible">
+                   <li class="">
+                     <p class="accord_eye_btn"> 
+                        <span class="show_content" eye-btn="artikel-details_name">
+                       <img src="img/show.svg" id="artikel-details_show">
+                     </span>
+                     <span class="hide_content" eye-btn="artikel-details_name" >
+                       <img src="img/hide.svg" class="hide" id="artikel-details_hide">
+                     </span>
+                      <p style="margin-top: 7px;position: absolute;z-index: 999;margin-left: 45px">Artikel Details</p>
+                     </p>
+                     <div class="collapsible-header" tabindex="0">
+                       
+                        <img src="img/plus.svg" height="47" width="50" id="list1_show">
+                     
+                        <img src="img/3.png" height="47" width="50" class="hide1" id="list1_hide">
+                     
+                     </div>
+                     <div class="contact_details_off artikel_section hide1" id="Artikel_Details">
+                       
+                           
+                           <p class="list1"> 
+                        <span class="show_content" eye-btn="Artikelnummer_name">
+                       <img src="img/show.svg" id="Artikelnummer_show">
+                     </span>
+                     <span class="hide_content" eye-btn="Artikelnummer_name" >
+                       <img src="img/hide.svg" class="hide" id="Artikelnummer_hide">
+                     </span>
+                         Artikelnummer
+                     </p>
+                         <span class="input_width_box">
+                           <input name="artikelnummer" class="eye_input" data-class="artikelnummer" value="" type="text" placeholder="Artikelnummer">
+                         </span>
+                       
+
+                       <p class="list1"> 
+                        <span class="show_content" eye-btn="gitn-stuck_name">
+                       <img src="img/show.svg" id="gitn-stuck_show">
+                     </span>
+                     <span class="hide_content" eye-btn="gitn-stuck_name" >
+                       <img src="img/hide.svg" class="hide" id="gitn-stuck_hide">
+                     </span>
+                         GITN-Stück
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="GITN-Stück" class="eye_input" data-class="GITN-Stück" value="" type="text" placeholder="GITN-Stück">
+                         </span>
+                       
+
+                       <p class="list1"> 
+                        <span class="show_content" eye-btn="gitn-verpackung_name">
+                       <img src="img/show.svg" id="gitn-verpackung_show">
+                     </span>
+                     <span class="hide_content" eye-btn="gitn-verpackung_name" >
+                       <img src="img/hide.svg" class="hide" id="gitn-verpackung_hide">
+                     </span>
+                         GITN Verpackung
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="GITN Verpackung" class="eye_input" data-class="GITN Verpackung" value="" type="text" placeholder="GITN Verpackung">
+                         </span>
+
+
+                            <p class="list1"> 
+                        <span class="show_content" eye-btn="gitn-gewicht_name">
+                       <img src="img/show.svg" id="gitn-gewicht_show">
+                     </span>
+                     <span class="hide_content" eye-btn="gitn-gewicht_name" >
+                       <img src="img/hide.svg" class="hide" id="gitn-gewicht_hide">
+                     </span>
+                         GITN Gewicht
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="GITN Gewicht" class="eye_input" data-class="GITN Gewicht" value="" type="text" placeholder="GITN Gewicht">
+                         </span>
+
+
+                            <p class="list1"> 
+                        <span class="show_content" eye-btn="marke_name">
+                       <img src="img/show.svg" id="marke_show">
+                     </span>
+                     <span class="hide_content" eye-btn="marke_name" >
+                       <img src="img/hide.svg" class="hide" id="marke_hide">
+                     </span>
+                         Marke
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="Marke" class="eye_input" data-class="Marke" value="" type="text" placeholder="Marke">
+                         </span>
+
+
+                         <p class="list1"> 
+                        <span class="show_content" eye-btn="qualitat_name">
+                       <img src="img/show.svg" id="qualitat_show">
+                     </span>
+                     <span class="hide_content" eye-btn="qualitat_name" >
+                       <img src="img/hide.svg" class="hide" id="qualitat_hide">
+                     </span>
+                          Qualität 
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="Marke" class="eye_input" data-class="Marke" value="" type="text" placeholder="Marke">
+                         </span>
+
+
+
+                         <p class="list1"> 
+                        <span class="show_content" eye-btn="okokontrollstelle_name">
+                       <img src="img/show.svg" id="okokontrollstelle_show">
+                     </span>
+                     <span class="hide_content" eye-btn="okokontrollstelle_name" >
+                       <img src="img/hide.svg" class="hide" id="okokontrollstelle_hide">
+                     </span>
+                         Ökokontrollstelle 
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="Marke" class="eye_input" data-class="Marke" value="" type="text" placeholder="Marke">
+                         </span>
+
+
+
+
+
+
+
+                            <p class="list1"> 
+                        <span class="show_content" eye-btn="herkunft_name">
+                       <img src="img/show.svg" id="herkunft_show">
+                     </span>
+                     <span class="hide_content" eye-btn="herkunft_name" >
+                       <img src="img/hide.svg" class="hide" id="herkunft_hide">
+                     </span>
+                        Herkunft
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="Herkunft" class="eye_input" data-class="Herkunft" value="" type="text" placeholder="Herkunft">
+                         </span>
+                     </div>
+                   </li>
+                 </ul>
+
+
+      <!-------- address section --------->
+
+                 <ul class="collapsible">
+                   <li>
+                     <p class="accord_eye_btn"> 
+                        <span class="show_content" eye-btn="middle_footer_name">
+                       <img src="img/show.svg" id="middle_footer_show">
+                     </span>
+                     <span class="hide_content" eye-btn="middle_footer_name" >
+                       <img src="img/hide.svg" class="hide" id="middle_footer_hide">
+                     </span>
+                      <p style="margin-top: 7px;position: absolute;z-index: 999;margin-left: 45px">Kontakt Details</p>
+                     </p>
+                     <div class="collapsible-header" tabindex="0">
+                      
+                        <img src="img/plus.svg" height="47" width="50" id="list_show">
+                     
+                        <img src="img/3.png" height="47" width="50" class="hide1" id="list_hide">
+                     
+                     </div>
+                     <div class="contact_details_off  artikel_section hide1" id="contact_detail">
+                   
+                     <p class="list"> 
+                        <span class="show_content" eye-btn="Firma_name">
+                       <img src="img/show.svg" id="Firma_show">
+                       </span>
+                       <span class="hide_content" eye-btn="Firma_name" >
+                       <img src="img/hide.svg" class="hide" id="Firma_hide">
+                     </span>
+                        Firma
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="Firma" class="eye_input" data-class="Firma" value="Rezeptrechner Firma" type="text">
+                         </span>
+                       
+
+                       <p class="list"> 
+                        <span class="show_content" eye-btn="Mühlenkamp_name">
+                       <img src="img/show.svg" id="Mühlenkamp_show">
+                     </span>
+                     <span class="hide_content" eye-btn="Mühlenkamp_name" >
+                       <img src="img/hide.svg" class="hide" id="Mühlenkamp_hide">
+                     </span>
+                         Straße
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="Straße" class="eye_input" data-class="Straße" value="Straße 1" type="text">
+                         </span>
+                       
+
+                       <p class="list"> 
+                        <span class="show_content" eye-btn="pincode_name">
+                       <img src="img/show.svg" id="pincode_show">
+                     </span>
+                     <span class="hide_content" eye-btn="pincode_name" >
+                       <img src="img/hide.svg" class="hide" id="pincode_hide">
+                     </span>
+                         Postleitzahl
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="Postleitzahl" class="eye_input" data-class="Postleitzahl" value="Postleitzahl" type="text">
+                         </span>
+
+
+                            <p class="list"> 
+                        <span class="show_content" eye-btn="Stadt_name">
+                       <img src="img/show.svg" id="Stadt_show">
+                     </span>
+                     <span class="hide_content" eye-btn="Stadt_name" >
+                       <img src="img/hide.svg" class="hide" id="Stadt_hide">
+                     </span>
+                        Stadt
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="Stadt" class="eye_input" data-class="Stadt" value="Stadt" type="text">
+                         </span>
+
+
+                            <p class="list"> 
+                        <span class="show_content" eye-btn="Land_name">
+                       <img src="img/show.svg" id="Land_show">
+                     </span>
+                     <span class="hide_content" eye-btn="Land_name" >
+                       <img src="img/hide.svg" class="hide" id="Land_hide">
+                     </span>
+                         Land
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="Deutschland" class="eye_input" data-class="Deutschland" value="Deutschland" type="text">
+                         </span>
+
+
+                         <p class="list"> 
+                        <span class="show_content" eye-btn="phone_name">
+                       <img src="img/show.svg" id="phone_show">
+                     </span>
+                     <span class="hide_content" eye-btn="phone_name" >
+                       <img src="img/hide.svg" class="hide" id="phone_hide">
+                     </span>
+                       phone
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="Herkunft" class="eye_input" data-class="Herkunft" value="tina@rezeptrechner.de" type="text">
+                         </span>
+
+
+
+                            <p class="list"> 
+                        <span class="show_content" eye-btn="email_name">
+                       <img src="img/show.svg" id="email_show">
+                     </span>
+                     <span class="hide_content" eye-btn="email_name" >
+                       <img src="img/hide.svg" class="hide" id="email_hide">
+                     </span>
+                       E-Mail
+                     </p>
+                         <span class="input_width_box">
+                           <input readonly="" name="Herkunft" class="eye_input" data-class="Herkunft" value="tina@rezeptrechner.de" type="text">
+                         </span>
+                     </div>
+                     <!-- <button class="Änderungen-btn">Änderungen speichern</button> -->
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+      
+
+      <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="function.js"></script>
+    </body>
+  </html>
