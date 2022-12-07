@@ -189,16 +189,16 @@
             $('#Firma_hide').click(function(){
               $('#Firma_show').removeClass('hide');
               $(this).addClass('hide');
-              $('.Firma').removeClass('hide');
-              $('.Firma').addClass('show');
+              $('.Firma-img').removeClass('hide');
+              $('.Firma-img').addClass('show');
             });
         });
          $(document).ready(function(){
             $('#Firma_show').click(function(){
               $('#Firma_hide').removeClass('hide');
               $(this).addClass('hide');
-              $('.Firma').removeClass('show');
-              $('.Firma').addClass('hide');
+              $('.Firma-img').removeClass('show');
+              $('.Firma-img').addClass('hide');
             });
         });
 
@@ -694,6 +694,6 @@
         $(document).ready(function(){
           $('#email').keyup(function(){
             input_txt = $(this).val();
-            $('#middle_footer_contact').find('.publicEmail').text(input_txt);
+            $('#middle_footer_contact').find('.email').text(input_txt);
           });
          });
