@@ -67,7 +67,9 @@
                           <div class="imgUp empty_img">
                             <div class="imagePreview">
                                 <label class="btn btn-primary">
-                                   <img src="img/2.png" style="padding-left: 94px;">
+                                  <div class="img-center">
+                                     <img src="img/2.png">
+                                  </div>
                                   <p>Upload Banner</p>
                                      <input type="file" id="logofileupload" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
                                 </label>
@@ -249,6 +251,9 @@
                       <tr>
                         <td class="Artikelnummer" id="Artikelnummer" style="display:table-cell;">
                           <textarea placeholder="Hier klicken"></textarea>
+                          <div class="textarea_div">
+                            
+                          </div>
                         </td>
                         <td class="gitn-stuck" id="gitn-stuck" style="display:table-cell;">
                           <textarea placeholder="Hier klicken"></textarea>
@@ -293,10 +298,10 @@
              <!-- gstin ean tables end-->
              <!-- middle footer start -->
            <div class="middle_footer">
-             <p class="footer_address">
+             <p class="footer_address" id="middle_footer_contact">
               <b class="contact_name"><strong>Kontakt: </strong></b>
-               <span class="companyName Firma" style="display:contents;">Rezeptrechner Firma, </span>
-               <span class="streetNumber Mühlenkamp" style="display:contents;">Mühlenkamp 311, </span>
+               <span class="companyName" style="display:contents;">Rezeptrechner Firma, </span>
+               <span class="streetNumber" style="display:contents;">Mühlenkamp 311, </span>
                <span class="postalCode pincode" style="display:contents;">22335, </span>
                <span class="city Stadt" style="display:contents;">Hamburg, </span>
                <span class="country Land" style="display:contents;">Deutschland, </span>
@@ -445,11 +450,11 @@
                      <!-- Logo -->
                      <div class="switch logo_banner">
                        <label>
-                         <span id="logo_section">
-                          Automatisiert
+                         <span>
+                          <p class="Automatisiert">Automatisiert</p>
                            <!-- Switch -->
                             <input type="checkbox">
-                              <span class="lever"></span>
+                              <span class="lever" style="margin-left: 96px;"></span>
                            </span>
                           
                        </label>
@@ -526,7 +531,7 @@
                          Artikelnummer
                      </p>
                          <span class="input_width_box">
-                           <input name="artikelnummer" class="eye_input" data-class="artikelnummer" value="" type="text" placeholder="Artikelnummer">
+                           <input readonly="" name="artikelnummer" class="artikelnummer" data-class="artikelnummer" value="" type="text" placeholder="Artikelnummer">
                          </span>
                        
 
@@ -540,7 +545,7 @@
                          GITN-Stück
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="GITN-Stück" class="eye_input" data-class="GITN-Stück" value="" type="text" placeholder="GITN-Stück">
+                           <input readonly="" name="GITN-Stück" class="eye_input GITN-Stück" data-class="GITN-Stück" value="" type="text" placeholder="GITN-Stück">
                          </span>
                        
 
@@ -554,7 +559,7 @@
                          GITN Verpackung
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="GITN Verpackung" class="eye_input" data-class="GITN Verpackung" value="" type="text" placeholder="GITN Verpackung">
+                           <input readonly="" name="GITN Verpackung" class="eye_input GITN-Verpackung" data-class="GITN Verpackung" value="" type="text" placeholder="GITN Verpackung">
                          </span>
 
 
@@ -568,7 +573,7 @@
                          GITN Gewicht
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="GITN Gewicht" class="eye_input" data-class="GITN Gewicht" value="" type="text" placeholder="GITN Gewicht">
+                           <input readonly="" name="GITN Gewicht" class="eye_input Gewicht" data-class="GITN Gewicht" value="" type="text" placeholder="GITN Gewicht">
                          </span>
 
 
@@ -582,7 +587,7 @@
                          Marke
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="Marke" class="eye_input" data-class="Marke" value="" type="text" placeholder="Marke">
+                           <input readonly="" name="Marke" class="eye_input Marke" data-class="Marke" value="" type="text" placeholder="Marke">
                          </span>
 
 
@@ -596,7 +601,7 @@
                           Qualität 
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="Marke" class="eye_input" data-class="Marke" value="" type="text" placeholder="Marke">
+                           <input readonly="" name="Marke" class="eye_input Qualität" data-class="Marke" value="" type="text" placeholder="Marke">
                          </span>
 
 
@@ -611,7 +616,7 @@
                          Ökokontrollstelle 
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="Marke" class="eye_input" data-class="Marke" value="" type="text" placeholder="Marke">
+                           <input readonly="" name="Marke" class="eye_input Ökokontrollstelle" data-class="Marke" value="" type="text" placeholder="Marke">
                          </span>
 
 
@@ -630,7 +635,7 @@
                         Herkunft
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="Herkunft" class="eye_input" data-class="Herkunft" value="" type="text" placeholder="Herkunft">
+                           <input readonly="" name="Herkunft" class="eye_input Herkunft" data-class="Herkunft" value="" type="text" placeholder="Herkunft">
                          </span>
                      </div>
                    </li>
@@ -669,7 +674,7 @@
                         Firma
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="Firma" class="eye_input" data-class="Firma" value="Rezeptrechner Firma" type="text">
+                           <input  name="Firma" class="eye_input" id="Firma" data-class="companyName" value="Rezeptrechner Firma" type="text">
                          </span>
                        
 
@@ -683,7 +688,7 @@
                          Straße
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="Straße" class="eye_input" data-class="Straße" value="Straße 1" type="text">
+                           <input name="Straße" class="eye_input" id="Mühlenkamp" data-class="Straße" value="Straße 1" type="text">
                          </span>
                        
 
@@ -697,7 +702,7 @@
                          Postleitzahl
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="Postleitzahl" class="eye_input" data-class="Postleitzahl" value="Postleitzahl" type="text">
+                           <input name="Postleitzahl" class="eye_input" id="Postleitzahl" data-class="Postleitzahl" value="Postleitzahl" type="text">
                          </span>
 
 
@@ -711,7 +716,7 @@
                         Stadt
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="Stadt" class="eye_input" data-class="Stadt" value="Stadt" type="text">
+                           <input id="Stadt" name="Stadt" class="eye_input" data-class="Stadt" value="Stadt" type="text">
                          </span>
 
 
@@ -725,7 +730,7 @@
                          Land
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="Deutschland" class="eye_input" data-class="Deutschland" value="Deutschland" type="text">
+                           <input id="Land" name="Deutschland" class="eye_input" data-class="Deutschland" value="Deutschland" type="text">
                          </span>
 
 
@@ -739,7 +744,7 @@
                        phone
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="Herkunft" class="eye_input" data-class="Herkunft" value="tina@rezeptrechner.de" type="text">
+                           <input id="phonetext" name="Herkunft" class="eye_input" data-class="Herkunft" value="+ 33 333 333 333" type="text">
                          </span>
 
 
@@ -754,7 +759,7 @@
                        E-Mail
                      </p>
                          <span class="input_width_box">
-                           <input readonly="" name="Herkunft" class="eye_input" data-class="Herkunft" value="tina@rezeptrechner.de" type="text">
+                           <input id="email" name="Herkunft" class="eye_input" data-class="Herkunft" value="tina@rezeptrechner.de" type="text">
                          </span>
                      </div>
                      <!-- <button class="Änderungen-btn">Änderungen speichern</button> -->
@@ -766,16 +771,7 @@
          </div>
     </div>
     </div>
-
-
-
-
-
-
-
-
-
-      <!--Import jQuery before materialize.js-->
+   <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
       
