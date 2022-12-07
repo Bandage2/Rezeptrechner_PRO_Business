@@ -472,6 +472,7 @@ padding: 4px !important;
 label .lever {
 /*margin-left: 2px;*/
 margin-top: 6px;
+margin-bottom: 14px;
 }
 [type="radio"].radio-btn-check:not(:checked) + span:not(.lever):before {
   width: 0;
@@ -557,6 +558,13 @@ border:none !important;
 
 .switch label input[type=checkbox]:checked+.lever:after{
   background-color: #f2770c !important;
+}
+.logo_banner .Automatisiert{
+  position: absolute;
+    top: 229px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
 }
 /******************switch design css end**************************/
 .switch.logo_banner label{
@@ -886,7 +894,7 @@ display: contents;
     flex: 0 0 100%;
     width: 100%;
 }
- .input_width_box input.eye_input {
+ .input_width_box input.eye_input, .artikelnummer {
     border: 1px solid #cccccc !important;
     padding: 0px 10px 0px 16px !important;
     border-radius: 4px !important;
@@ -916,5 +924,8 @@ text-transform: capitalize;
     margin-top: 14px;
   cursor: pointer;
     
+}
+.img-center{
+  position: absolute;
 }
 /************************logo-switch end***************************************/
