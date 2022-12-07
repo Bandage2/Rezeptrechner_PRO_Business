@@ -523,3 +523,177 @@
           });
          });
 
+         // Artikelnummer textarea function
+
+         $(document).ready(function(){
+          $('#Artikelnummer textarea').keyup(function(){
+            input_txt = $(this).val();
+            //alert(input_txt+'DRM');
+
+            $('.input_width_box .artikelnummer').val(input_txt);
+          });
+         });
+
+
+
+         // gitn-stuck textarea function
+
+
+        $(document).ready(function(){
+          $('#gitn-stuck textarea').keyup(function(){
+            input_txt = $(this).val();
+            //alert(input_txt+'DRM');
+
+            $('.input_width_box .GITN-Stück').val(input_txt);
+          });
+         });
+          
+  
+        // GITN Verpackung textarea function
+
+
+        $(document).ready(function(){
+          $('#gitn-verpackung textarea').keyup(function(){
+            input_txt = $(this).val();
+            //alert(input_txt+'DRM');
+
+            $('.input_width_box .GITN-Verpackung').val(input_txt);
+          });
+         });
+
+        // Gewicht textarea function
+
+        $(document).ready(function(){
+          $('#gitn-gewicht textarea').keyup(function(){
+            input_txt = $(this).val();
+            //alert(input_txt+'DRM');
+
+            $('.input_width_box .Gewicht').val(input_txt);
+          });
+         });
+
+
+         // Marke textarea function
+
+        $(document).ready(function(){
+          $('#marke textarea').keyup(function(){
+            input_txt = $(this).val();
+            //alert(input_txt+'DRM');
+
+            $('.input_width_box .Marke').val(input_txt);
+          });
+         });
+
+        // qualitat textarea function
+
+        $(document).ready(function(){
+          $('#qualitat textarea').keyup(function(){
+            input_txt = $(this).val();
+            //alert(input_txt+'DRM');
+
+            $('.input_width_box .Qualität').val(input_txt);
+          });
+         });
+
+
+        // qualitat textarea function
+
+        $(document).ready(function(){
+          $('#okokontrollstelle textarea').keyup(function(){
+            input_txt = $(this).val();
+            //alert(input_txt+'DRM');
+
+            $('.input_width_box .Ökokontrollstelle').val(input_txt);
+          });
+         });
+
+
+        // herkunft textarea function
+
+        $(document).ready(function(){
+          $('#herkunft textarea').keyup(function(){
+            input_txt = $(this).val();
+            //alert(input_txt+'DRM');
+
+            $('.input_width_box .Herkunft').val(input_txt);
+          });
+         });
+
+
+
+         // Firma textarea function
+
+
+        $(document).ready(function(){
+          $('#Firma').keyup(function(){
+            input_txt = $(this).val();
+            $('#middle_footer_contact').find('.companyName').text(input_txt);
+          });
+         });
+
+
+
+        // Firma textarea function
+
+
+        $(document).ready(function(){
+          $('#Mühlenkamp').keyup(function(){
+            input_txt = $(this).val();
+            $('#middle_footer_contact').find('.streetNumber').text(input_txt);
+          });
+         });
+
+
+        // Postleitzahl textarea function
+
+
+        $(document).ready(function(){
+          $('#Postleitzahl').keyup(function(){
+            input_txt = $(this).val();
+            $('#middle_footer_contact').find('.postalCode').text(input_txt);
+          });
+         });
+
+
+        // Postleitzahl textarea function
+
+
+        $(document).ready(function(){
+          $('#Stadt').keyup(function(){
+            input_txt = $(this).val();
+            $('#middle_footer_contact').find('.city').text(input_txt);
+          });
+         });
+
+
+
+        // Land textarea function
+
+
+        $(document).ready(function(){
+          $('#Land').keyup(function(){
+            input_txt = $(this).val();
+            $('#middle_footer_contact').find('.country').text(input_txt);
+          });
+         });
+
+
+        // phone textarea function
+
+
+        $(document).ready(function(){
+          $('#phonetext').keyup(function(){
+            input_txt = $(this).val();
+            $('#middle_footer_contact').find('.phone').text(input_txt);
+          });
+         });
+
+        // email textarea function
+
+
+        $(document).ready(function(){
+          $('#email').keyup(function(){
+            input_txt = $(this).val();
+            $('#middle_footer_contact').find('.publicEmail').text(input_txt);
+          });
+         });
